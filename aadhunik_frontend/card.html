@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+    body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+    </style>
+    <link rel="stylesheet" type="text/css" href="com-vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow" >
+        <div class="container">
+         
+        </div>
+      </nav>
+      
+      <!-- Page Content -->
+      <div class="container">
+      <div class="row" id="restaurant">
+      
+        </div>
+        </div>
+          <script src="js/restaurant.js"></script>
+</body>
+</html>
+
+<script>
+$.each(urldata, function (index, value) {   
+         $("#restaurant").append("<div class='card' style='width: 18rem;''><img class='card-img-top' src='images/bg-01.jpg' alt='Card image cap'><div class='card-body'><h5 class='card-title'>name<img src='images/star2.jpg' style='margin-left:45% ;width:8%;''>4</h5><h5 class='card-title'>cuisine</h5><h5 class='card-title'>phone</h5><h5 class='card-title'>address</h5></div></div>")
+        });
+         
+         });
+</script>
